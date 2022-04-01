@@ -1,0 +1,11 @@
+<h2>{{title}}</h2>
+<div  *ngFor='let Student of students'>
+    <div class="container"  *ngIf='Student.status!=true && Student.status!=false'>
+    <h4 class="ime" routerLink='student/{{Student.name}}'>{{Student.name}}</h4>
+    <h4 class="prezime" routerLink='student/{{Student.lastName}}'>{{Student.lastName}}</h4>
+    
+    
+    <button (click)="toggleUser(Student.id)" class="accept" type="submit">Accept</button>
+    <button  (click)="declineUser(Student.id)" class="decline" type="submit" >Decline</button>
+</div>
+</div>

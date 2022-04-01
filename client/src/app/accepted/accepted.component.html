@@ -1,0 +1,6 @@
+<h2>Accepted Students:</h2>
+
+<div class="container" *ngFor='let student of students'>
+    <h4 class="ime" *ngIf="student.status == true" >{{student.name}}</h4>
+    <h4 class="prezime" *ngIf="student.status == true" >{{student.lastName}}</h4>
+</div>

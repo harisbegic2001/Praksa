@@ -1,0 +1,54 @@
+<h2 style="font-weight: lighter;">Create User:</h2>
+<form  #registerForm="ngForm" (ngSubmit)="createUser()"  autocomplete="off">
+    <div class="form-group">
+   
+
+
+
+   <input
+    name="name"
+    [(ngModel)] = "model.name"
+    type="text"
+    placeholder="Your Name"
+    >
+
+
+    <br>
+    <br>
+    <input class="form-control"
+    name="lastName"
+    [(ngModel)] = "model.lastName"
+    type="text"
+    placeholder="Your Surname"
+    >
+
+
+    <br>
+    <br>
+    <input class="form-control"
+    name="email"
+    [(ngModel)] = "model.email"
+    type="text"
+    placeholder="Your Email"
+    >
+
+
+    <br>
+    <br>
+    <input class="form-control"
+    name="phoneNumber"
+    [(ngModel)] = "model.phoneNumber"
+    type="text"
+    placeholder="Your Phone Number"
+    >
+
+
+  </div>
+    <br>
+    <br>
+    <div class="form-group text-center">
+    <button style="background-color:green; margin-right: 10px; color: antiquewhite;" type="submit" >Register</button>
+    <button  style="background-color:red; color: antiquewhite;"  type="button"  >Cancel</button>
+    </div>
+  </form>
+

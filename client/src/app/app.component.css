@@ -1,0 +1,25 @@
+.accept{
+    color: whitesmoke;
+    background-color: green;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.decline{
+    color: white;
+    background-color: red;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.container{
+    display: flex;
+    margin: auto;
+    width: 50%;
+    border: 2px solid springgreen;
+    padding: 10px;
+}
+
+.prezime{
+    margin-left: 10px;
+}
